@@ -22,9 +22,9 @@ def main():
     model.add(Dense(256))
     model.add(Activation("relu"))
     # 出力を作成
-    model.add(Dense(2))
+    model.add(Dense(3))
     model.add(Activation("softmax"))
-    # model.summary()
+    model.summary()
 
     # フィッティングの（重み）調整の実施
     model.compile(
